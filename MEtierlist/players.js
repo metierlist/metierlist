@@ -29,8 +29,6 @@ const players = [
 {name:"Agamer941", region:"AS", kits:["Mace"], tiers:["HT4"]},
 {name:"NotShadow_OG", region:"AS", kits:["Mace"], tiers:["LT5"]},
 {name:"CriticalClaws", region:"AS", kits:["NethOP"], tiers:["LT5"]},
-{name:"CriticalClaws", region:"AS", kits:["SMP"], tiers:["HT5"]},
-{name:"CriticalClaws", region:"AS", kits:["Sword"], tiers:["HT5"]},
 {name:"RaspyYT", region:"AS", kits:["NethOP"], tiers:["HT5"]},
 {name:"NotShadow_OG", region:"AS", kits:["NethOP"], tiers:["LT5"]},
 {name:"NotShadow_OG", region:"AS", kits:["Axe"], tiers:["LT5"]},
