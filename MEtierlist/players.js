@@ -40,4 +40,5 @@ const players = [
 {name:"RaspyYT", region:"AS", kits:["NethOP"], tiers:["LT4"]},
 {name:"WhiskeyyMC", region:"AS", kits:["NethOP"], tiers:["HT4"]},
 {name:"_SpookyLegend", region:"AS", kits:["Mace"], tiers:["HT4"]},
+{name:"pgp7", region:"AS", kits:["Vanilla"], tiers:["HT5"]},
 ];
