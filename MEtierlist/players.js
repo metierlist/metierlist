@@ -41,4 +41,6 @@ const players = [
 {name:"WhiskeyyMC", region:"AS", kits:["NethOP"], tiers:["HT4"]},
 {name:"_SpookyLegend", region:"AS", kits:["Mace"], tiers:["HT4"]},
 {name:"pgp7", region:"AS", kits:["Vanilla"], tiers:["HT5"]},
+{name:"CriticalClaws", region:"AS", kits:["Sword"], tiers:["HT5"]},
+{name:"CriticalClaws", region:"AS", kits:["SMP"], tiers:["HT5"]},
 ];
