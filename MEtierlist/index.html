@@ -4,6 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <title>METierlist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script type="text/javascript">
 (function (l) {
@@ -288,6 +289,85 @@ font-size:22px;
 cursor:pointer;
 }
 
+.close{
+position:absolute;
+right:20px;
+top:15px;
+font-size:22px;
+cursor:pointer;
+}
+
+/* 📱 MOBILE START */
+@media (max-width: 768px){
+
+.header{
+flex-direction:column;
+gap:20px;
+padding:20px;
+text-align:center;
+}
+
+.title{
+font-size:36px;
+}
+
+.navbar{
+flex-wrap:nowrap;
+overflow-x:auto;
+gap:12px;
+padding-bottom:10px;
+}
+
+.navitem{
+min-width:70px;
+height:60px;
+font-size:11px;
+}
+
+.container{
+width:95%;
+margin:80px auto 40px auto;
+}
+
+.search{
+height:40px;
+font-size:14px;
+}
+
+.player-card{
+flex-direction:column;
+align-items:flex-start;
+gap:10px;
+padding:14px;
+}
+
+.name{
+font-size:18px;
+}
+
+.skin{
+width:50px;
+height:50px;
+margin-right:0;
+}
+
+.points{
+align-self:flex-end;
+font-size:16px;
+}
+
+.popup-box{
+width:90%;
+padding:20px;
+}
+
+.popup-skin{
+width:70px;
+}
+
+}
+/* 📱 MOBILE END */
+
 </style>
 </head>
 
@@ -389,12 +469,22 @@ function render(list){
 const container=document.getElementById("players");
 container.innerHTML="";
 
+let currentRank = 0;
+let lastPoints = null;
+
 list.forEach((p,i)=>{
 
+// ✅ HANDLE TIES
+if(p.points !== lastPoints){
+currentRank = i + 1;
+lastPoints = p.points;
+}
+
+// ✅ COLOR BASED ON RANK (NOT INDEX)
 let rankClass="";
-if(i===0) rankClass="first";
-else if(i===1) rankClass="second";
-else if(i===2) rankClass="third";
+if(currentRank === 1) rankClass="first";
+else if(currentRank === 2) rankClass="second";
+else if(currentRank === 3) rankClass="third";
 
 const kitIcons={
 vanilla:"https://pvptiers.com/icons/badges/crystal.webp",
@@ -429,7 +519,7 @@ card.onclick=()=>openProfile(p);
 card.innerHTML=`
 <img class="skin" src="https://mc-heads.net/avatar/${p.name}">
 <div class="info">
-<div class="name">#${i+1} ${p.name}</div>
+<div class="name">#${currentRank} ${p.name}</div>
 <div class="region ${p.region}">${p.region}</div>
 <div class="tiers">${tiersHTML}</div>
 </div>
