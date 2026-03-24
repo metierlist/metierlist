@@ -586,27 +586,21 @@ p.points=total;
 });
 
 players.sort((a,b)=>b.points-a.points);
+players.forEach((p,i)=>{
+p.originalRank = i + 1;
+});
 
 function render(list){
 const container=document.getElementById("players");
 container.innerHTML="";
 
-let currentRank = 0;
-let lastPoints = null;
+list.forEach((p)=>{
 
-list.forEach((p,i)=>{
-
-// ✅ HANDLE TIES
-if(p.points !== lastPoints){
-currentRank = i + 1;
-lastPoints = p.points;
-}
-
-// ✅ COLOR BASED ON RANK (NOT INDEX)
 let rankClass="";
-if(currentRank === 1) rankClass="first";
-else if(currentRank === 2) rankClass="second";
-else if(currentRank === 3) rankClass="third";
+
+if(p.originalRank === 1) rankClass="first";
+else if(p.originalRank === 2) rankClass="second";
+else if(p.originalRank === 3) rankClass="third";
 
 const kitIcons={
 vanilla:"https://pvptiers.com/icons/badges/crystal.webp",
@@ -641,7 +635,7 @@ card.onclick=()=>openProfile(p);
 card.innerHTML=`
 <img class="skin" src="https://mc-heads.net/avatar/${p.name}">
 <div class="info">
-<div class="name">#${currentRank} ${p.name}</div>
+<div class="name">#${p.originalRank} ${p.name}</div>
 <div class="region ${p.region}">${p.region}</div>
 <div class="tiers">${tiersHTML}</div>
 </div>
