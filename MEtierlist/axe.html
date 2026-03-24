@@ -232,16 +232,20 @@ display:inline-block;
 /* 📱 PERFECT MOBILE FIX */
 /* ========================= */
 
-@media (max-width: 600px){
+/* GLOBAL (VERY IMPORTANT) */
+*{
+box-sizing:border-box;
+}
 
-/* GLOBAL */
 html, body{
 overflow-x:hidden;
 }
 
-*{
-box-sizing:border-box;
-}
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 600px){
 
 /* HEADER */
 .header{
@@ -265,18 +269,17 @@ font-size:12px;
 padding:6px 12px;
 }
 
-/* NAVBAR (FIX OVERFLOW) */
+/* 🔥 NAVBAR FIX (NO OVERFLOW) */
 .navbar{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
+display:grid !important;
+grid-template-columns:repeat(4,1fr);
 gap:8px;
 width:100%;
 }
 
 .navitem{
-width:60px;
-height:60px;
+width:100%;
+height:55px;
 font-size:10px;
 }
 
@@ -289,35 +292,52 @@ height:22px;
 .search{
 width:90%;
 height:36px;
-font-size:16px;
+font-size:16px; /* prevents zoom */
 margin:15px auto;
 }
 
-/* 🔥 MAIN SLIDER (FIXED PROPERLY) */
+/* ========================= */
+/* 🔥 SLIDER FIX */
+/* ========================= */
+
 .tiers{
 display:flex !important;
-flex-direction:row;
-width:100%;
-overflow-x:auto;
+flex-direction:row !important;
+
+/* REMOVE DESKTOP LIMITS */
+width:100% !important;
+max-width:100% !important;
+margin:0 !important;
+
+/* REMOVE GRID */
+grid-template-columns:none !important;
+
+/* SCROLL */
+overflow-x:auto !important;
+overflow-y:hidden;
+
 scroll-snap-type:x mandatory;
 -webkit-overflow-scrolling:touch;
-gap:10px;
-padding:10px;
 
-/* ❌ REMOVE GRID EFFECT */
-grid-template-columns:none !important;
+/* CLEAN */
+gap:0;
+padding:0;
 }
 
-/* 🔥 EACH TIER FULL SCREEN */
+/* ONE FULL SCREEN TIER */
 .tier-box{
-flex:0 0 100%;
-max-width:100%;
-min-width:100%;
+flex:0 0 100% !important;
+width:100% !important;
+min-width:100% !important;
+max-width:100% !important;
+
 scroll-snap-align:start;
-border-radius:14px;
+
+margin:0;
+border-radius:0;
 }
 
-/* HEADER */
+/* TIER HEADER */
 .tier-header{
 font-size:18px;
 padding:10px;
@@ -335,11 +355,15 @@ width:28px;
 height:28px;
 }
 
+/* ========================= */
 /* POPUP */
+/* ========================= */
+
 .popup-box{
 width:90%;
 max-width:300px;
 padding:20px;
+border-radius:14px;
 }
 
 .popup-skin{
