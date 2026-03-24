@@ -273,7 +273,9 @@ justify-content:center;
 background:#0e1a2b;
 padding:40px;
 border-radius:20px;
-width:420px;
+width:fit-content;     /* 🔥 key fix */
+min-width:420px;
+max-width:none;        /* 🔥 remove limit */
 text-align:center;
 position:relative;
 }
@@ -285,7 +287,6 @@ margin-bottom:10px;
 }
 
 #popupKits > div{
-min-width:60px;
 flex-shrink:0;
 }
 
@@ -304,6 +305,7 @@ top:15px;
 font-size:22px;
 cursor:pointer;
 }
+
 
 /* ========================= */
 /* 🌍 GLOBAL FIXES */
@@ -523,7 +525,7 @@ right:12px;
 <div id="popupRegion"></div>
 <h3 id="popupPoints"></h3>
 <h4>Tiers</h4>
-<div id="popupKits" style="display:flex;gap:12px;flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;margin-bottom:15px;"></div>
+<div id="popupKits" style="display:flex;gap:12px;flex-wrap:nowrap;justify-content:center;margin-bottom:15px;"></div>
 
 <div id="popupTiers" style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;"></div>
 </div>
