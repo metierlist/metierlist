@@ -228,6 +228,121 @@ display:inline-block;
 .badge.t4{background:#3fa9f5;}
 .badge.t5{background:#9c6bff;}
 
+/* ========================= */
+/* 📱 MOBILE SLIDING TIERS */
+/* ========================= */
+
+@media (max-width: 600px){
+
+/* FIX OVERFLOW */
+html, body{
+overflow-x:hidden;
+}
+
+/* HEADER */
+.header{
+flex-direction:column;
+gap:10px;
+align-items:flex-start;
+padding:15px;
+}
+
+.title{
+font-size:28px;
+}
+
+.backbtn{
+top:10px;
+left:10px;
+padding:6px 12px;
+font-size:12px;
+}
+
+/* NAVBAR SMALL BOXES */
+.navbar{
+flex-wrap:wrap;
+gap:8px;
+}
+
+.navitem{
+width:55px;
+height:55px;
+font-size:9px;
+}
+
+.navitem img{
+width:24px;
+height:24px;
+}
+
+/* SEARCH */
+.search{
+width:90%;
+height:36px;
+font-size:16px;
+margin:15px auto;
+}
+
+/* 🔥 MAIN SLIDER */
+.tiers{
+width:100%;
+display:flex;
+overflow-x:auto;
+scroll-snap-type:x mandatory;
+gap:12px;
+padding:10px;
+}
+
+/* EACH TIER FULL SCREEN CARD */
+.tier-box{
+min-width:85%;
+flex-shrink:0;
+scroll-snap-align:center;
+border-radius:16px;
+}
+
+/* HEADER BIG */
+.tier-header{
+font-size:18px;
+padding:10px;
+}
+
+/* PLAYER LIST */
+.player{
+padding:12px;
+font-size:14px;
+}
+
+/* MAKE IT LOOK LIKE STACKED LIST */
+.player + .player{
+border-top:1px solid #2c3c4f;
+}
+
+/* SKIN */
+.skin{
+width:28px;
+height:28px;
+}
+
+/* POPUP SMALL */
+.popup-box{
+width:90%;
+max-width:300px;
+padding:20px;
+}
+
+.popup-skin{
+width:60px;
+}
+
+.close{
+font-size:18px;
+top:10px;
+right:12px;
+}
+
+}
+
 </style>
 </head>
 
