@@ -231,7 +231,13 @@ display:inline-block;
 /* ========================= */
 /* 📱 MOBILE SLIDING TIERS */
 /* ========================= */
+*{
+box-sizing:border-box;
+}
 
+html, body{
+overflow-x:hidden;
+}
 @media (max-width: 600px){
 
 /* FIX OVERFLOW */
@@ -283,20 +289,25 @@ font-size:16px;
 margin:15px auto;
 }
 
-/* 🔥 MAIN SLIDER */
+/* 🔥 MAIN SLIDER FIX */
 .tiers{
-width:100%;
-display:flex;
+display:flex !important;
+flex-direction:row;
+width:100% !important;
+max-width:100%;
 overflow-x:auto;
+overflow-y:hidden;
 scroll-snap-type:x mandatory;
+-webkit-overflow-scrolling:touch;
 gap:12px;
 padding:10px;
 }
 
-/* EACH TIER FULL SCREEN CARD */
+/* EACH TIER CARD */
 .tier-box{
-min-width:85%;
-flex-shrink:0;
+min-width:90%;
+max-width:90%;
+flex:0 0 90%;
 scroll-snap-align:center;
 border-radius:16px;
 }
