@@ -284,6 +284,11 @@ border-radius:50%;
 margin-bottom:10px;
 }
 
+#popupKits > div{
+min-width:60px;
+flex-shrink:0;
+}
+
 .close{
 position:absolute;
 right:20px;
@@ -518,7 +523,7 @@ right:12px;
 <div id="popupRegion"></div>
 <h3 id="popupPoints"></h3>
 <h4>Tiers</h4>
-<div id="popupKits" style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:15px;"></div>
+<div id="popupKits" style="display:flex;gap:12px;flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;margin-bottom:15px;"></div>
 
 <div id="popupTiers" style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;"></div>
 </div>
