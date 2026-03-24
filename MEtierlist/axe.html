@@ -229,56 +229,60 @@ display:inline-block;
 .badge.t5{background:#9c6bff;}
 
 /* ========================= */
-/* 📱 MOBILE SLIDING TIERS */
+/* 📱 PERFECT MOBILE FIX */
 /* ========================= */
-*{
-box-sizing:border-box;
-}
 
-html, body{
-overflow-x:hidden;
-}
 @media (max-width: 600px){
 
-/* FIX OVERFLOW */
+/* GLOBAL */
 html, body{
 overflow-x:hidden;
+}
+
+*{
+box-sizing:border-box;
 }
 
 /* HEADER */
 .header{
 flex-direction:column;
 gap:10px;
-align-items:flex-start;
+align-items:center;
 padding:15px;
 }
 
 .title{
 font-size:28px;
+text-align:center;
 }
 
+/* BACK BUTTON */
 .backbtn{
-top:10px;
-left:10px;
-padding:6px 12px;
+position:static;
+margin:10px;
+display:inline-block;
 font-size:12px;
+padding:6px 12px;
 }
 
-/* NAVBAR SMALL BOXES */
+/* NAVBAR (FIX OVERFLOW) */
 .navbar{
+display:flex;
 flex-wrap:wrap;
+justify-content:center;
 gap:8px;
+width:100%;
 }
 
 .navitem{
-width:55px;
-height:55px;
-font-size:9px;
+width:60px;
+height:60px;
+font-size:10px;
 }
 
 .navitem img{
-width:24px;
-height:24px;
+width:22px;
+height:22px;
 }
 
 /* SEARCH */
@@ -289,44 +293,40 @@ font-size:16px;
 margin:15px auto;
 }
 
-/* 🔥 MAIN SLIDER FIX */
+/* 🔥 MAIN SLIDER (FIXED PROPERLY) */
 .tiers{
 display:flex !important;
 flex-direction:row;
-width:100% !important;
-max-width:100%;
+width:100%;
 overflow-x:auto;
-overflow-y:hidden;
 scroll-snap-type:x mandatory;
 -webkit-overflow-scrolling:touch;
-gap:12px;
+gap:10px;
 padding:10px;
+
+/* ❌ REMOVE GRID EFFECT */
+grid-template-columns:none !important;
 }
 
-/* EACH TIER CARD */
+/* 🔥 EACH TIER FULL SCREEN */
 .tier-box{
-min-width:90%;
-max-width:90%;
-flex:0 0 90%;
-scroll-snap-align:center;
-border-radius:16px;
+flex:0 0 100%;
+max-width:100%;
+min-width:100%;
+scroll-snap-align:start;
+border-radius:14px;
 }
 
-/* HEADER BIG */
+/* HEADER */
 .tier-header{
 font-size:18px;
 padding:10px;
 }
 
-/* PLAYER LIST */
+/* PLAYER */
 .player{
 padding:12px;
 font-size:14px;
-}
-
-/* MAKE IT LOOK LIKE STACKED LIST */
-.player + .player{
-border-top:1px solid #2c3c4f;
 }
 
 /* SKIN */
@@ -335,7 +335,7 @@ width:28px;
 height:28px;
 }
 
-/* POPUP SMALL */
+/* POPUP */
 .popup-box{
 width:90%;
 max-width:300px;
