@@ -46,11 +46,4 @@ const players = [
 {name:"Dr4gonis", region:"AS", kits:["Vanilla"], tiers:["HT4"]},
 {name:"ItsHuzaifaXD", region:"AS", kits:["NethOP"], tiers:["LT5"]},
 {name:"Podina69", region:"AS", kits:["NethOP"], tiers:["HT5"]},
-{name:"BananaToaster_16", region:"AS", kits:["NethOP"], tiers:["LT3"]},
-{name:"BananaToaster_16", region:"AS", kits:["Sword"], tiers:["LT3"]},
-{name:"BananaToaster_16", region:"AS", kits:["Pot"], tiers:["LT3"]},
-{name:"BananaToaster_16", region:"AS", kits:["Axe"], tiers:["LT3"]},
-{name:"BananaToaster_16", region:"AS", kits:["SMP"], tiers:["LT3"]},
-{name:"BananaToaster_16", region:"AS", kits:["Mace"], tiers:["LT5"]},
-{name:"BananaToaster_16", region:"AS", kits:["UHC"], tiers:["LT4"]},
 ];
