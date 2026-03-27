@@ -586,8 +586,24 @@ p.points=total;
 });
 
 players.sort((a,b)=>b.points-a.points);
+
+let currentRank = 1;
+let lastPoints = null;
+let skip = 0;
+
 players.forEach((p,i)=>{
-p.originalRank = i + 1;
+
+if(p.points === lastPoints){
+    p.originalRank = currentRank;
+    skip++;
+}else{
+    currentRank = currentRank + skip;
+    p.originalRank = currentRank;
+    skip = 1;
+}
+
+lastPoints = p.points;
+
 });
 
 function render(list){
