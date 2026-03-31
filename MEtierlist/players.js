@@ -47,4 +47,5 @@ const players = [
 {name:"ItsHuzaifaXD", region:"AS", kits:["NethOP"], tiers:["LT5"]},
 {name:"Podina69", region:"AS", kits:["NethOP"], tiers:["HT5"]},
 {name:"Dr4gonis", region:"AS", kits:["Axe"], tiers:["LT5"]},
+{name:"Rexure4K", region:"AS", kits:["NethOP"], tiers:["HT4"]},
 ];
