@@ -545,28 +545,40 @@ HT4:4,LT4:3,
 HT5:2,LT5:1
 };
 
-const merged={};
+const merged = {};
 
-players.forEach(p=>{
-if(!merged[p.name]){
-merged[p.name]={name:p.name,region:p.region,kits:{}};
-}
-p.kits.forEach((kit,i)=>{
-const key=kit.toLowerCase();
-const tier=p.tiers[i];
-merged[p.name].kits[key]=tier;
-});
+players.forEach(p => {
+  const id = p.name + "_" + p.region;
+
+  if (!merged[id]) {
+    merged[id] = { name: p.name, region: p.region, kits: {} };
+  }
+
+  p.kits.forEach((kit, i) => {
+    const key = kit.toLowerCase();
+    const tier = p.tiers[i];
+    merged[id].kits[key] = tier;
+  });
 });
 
-players.length=0;
+// rebuild players array
+players.length = 0;
 
-Object.values(merged).forEach(p=>{
-const kits=[],tiers=[];
-Object.keys(p.kits).forEach(k=>{
-kits.push(k);
-tiers.push(p.kits[k]);
-});
-players.push({name:p.name,region:p.region,kits,tiers});
+Object.values(merged).forEach(p => {
+  const kits = [];
+  const tiers = [];
+
+  Object.keys(p.kits).forEach(k => {
+    kits.push(k);
+    tiers.push(p.kits[k]);
+  });
+
+  players.push({
+    name: p.name,
+    region: p.region,
+    kits,
+    tiers
+  });
 });
 
 /* ORIGINAL LOGIC */
@@ -587,24 +599,16 @@ p.points=total;
 
 players.sort((a,b)=>b.points-a.points);
 
-let currentRank = 1;
-let lastPoints = null;
-let skip = 0;
+// DENSE RANKING (#1 #2 #2 #3)
+let rank = 1;
 
-players.forEach((p,i)=>{
-
-if(p.points === lastPoints){
-    p.originalRank = currentRank;
-    skip++;
-}else{
-    currentRank = currentRank + skip;
-    p.originalRank = currentRank;
-    skip = 1;
+for (let i = 0; i < players.length; i++) {
+  if (i > 0 && players[i].points < players[i - 1].points) {
+    rank++;
+  }
+  players[i].originalRank = rank;
 }
 
-lastPoints = p.points;
-
-});
 
 function render(list){
 const container=document.getElementById("players");
