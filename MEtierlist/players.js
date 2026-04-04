@@ -56,4 +56,5 @@ const players = [
 {name:"FlameFragse", region:"AS", kits:["NethOP"], tiers:["HT3"]},
 {name:"FlameFragse", region:"AS", kits:["Sword"], tiers:["LT3"]},
 {name:"Podina69", region:"AS", kits:["Axe"], tiers:["LT4"]},
+{name:"Dr4gonis", region:"AS", kits:["Mace"], tiers:["LT3"]},
 ];
