@@ -50,7 +50,7 @@ const players = [
 {name:"Rexure4K", region:"AS", kits:["NethOP"], tiers:["HT4"]},
 {name:"CriticalClaws", region:"AS", kits:["Sword"], tiers:["LT4"]},
 {name:"Dr4gonis", region:"AS", kits:["Sword"], tiers:["LT4"]},
-{name:"podina69", region:"AS", kits:["Sword"], tiers:["LT4"]},
+{name:"Podina69", region:"AS", kits:["Sword"], tiers:["LT4"]},
 {name:"CyberNeonNInja", region:"AS", kits:["Mace"], tiers:["HT5"]},
 {name:"Podina69", region:"AS", kits:["Mace"], tiers:["HT4"]},
 {name:"FlameFragse", region:"AS", kits:["NethOP"], tiers:["HT3"]},
