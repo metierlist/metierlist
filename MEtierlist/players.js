@@ -58,6 +58,7 @@ const players = [
 {name:"Podina69", region:"AS", kits:["Axe"], tiers:["LT4"]},
 {name:"Dr4gonis", region:"AS", kits:["Mace"], tiers:["LT3"]},
 {name:"Dr4gonis", region:"AS", kits:["UHC"], tiers:["LT3"]},
-{name:"mysticxxx", region:"AS", kits:["UHC"], tiers:["HT5"]},
+{name:"MysticFoxXX", region:"AS", kits:["UHC"], tiers:["HT5"]},
 {name:"Podina69", region:"AS", kits:["UHC"], tiers:["LT3"]},
+{name:"MysticFoxXX", region:"AS", kits:["Mace"], tiers:["HT4"]},
 ];
