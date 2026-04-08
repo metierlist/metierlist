@@ -61,4 +61,6 @@ const players = [
 {name:"MysticFoxXX", region:"AS", kits:["Axe"], tiers:["HT5"]},
 {name:"ShadowwLight", region:"AS", kits:["Mace"], tiers:["LT3"]},
 {name:"ShadowwLight", region:"AS", kits:["Vanilla"], tiers:["HT5"]},
+{name:"AgroRefills", region:"AS", kits:["Vanilla"], tiers:["LT4"]},
+{name:"Dr4gonis", region:"AS", kits:["Vanilla"], tiers:["HT5"]},
 ];
