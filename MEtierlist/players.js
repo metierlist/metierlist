@@ -66,4 +66,6 @@ const players = [
 {name:"Stunified_", region:"AS", kits:["Vanilla"], tiers:["LT4"]},
 {name:"_SpookyLegend", region:"AS", kits:["UHC"], tiers:["LT4"]},
 {name:"RaspyYT", region:"AS", kits:["UHC"], tiers:["HT4"]},
+{name:"WhiskeyyMC", region:"AS", kits:["NethOP"], tiers:["HT4"]},
+{name:"DemoLizer_", region:"AS", kits:["NethOP"], tiers:["HT5"]},
 ];
