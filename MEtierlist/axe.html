@@ -354,15 +354,16 @@ right:12px;
 }
 
 /* ========================= */
-/* 📱 MOBILE SWIPE FIX */
+/* 📱 MOBILE OPTIMIZATION FIXED */
 /* ========================= */
 
-@media (max-width:600px){
+@media (max-width: 600px){
 
 /* HEADER */
 .header{
 flex-direction:column;
 gap:20px;
+align-items:center;
 text-align:center;
 }
 
@@ -387,11 +388,16 @@ font-size:10px;
 width:90%;
 height:38px;
 font-size:15px;
+padding:0 14px;
 }
 
-/* 🔥 SWIPE TIERS (IMPORTANT PART) */
+/* ========================= */
+/* 🔥 SWIPE TIERS (MAIN FIX) */
+/* ========================= */
+
 .tiers{
 display:flex !important;
+flex-wrap:nowrap;
 overflow-x:auto;
 scroll-snap-type:x mandatory;
 gap:15px;
@@ -400,14 +406,20 @@ width:100%;
 -webkit-overflow-scrolling:touch;
 }
 
-/* EACH TIER = FULL PAGE */
+/* EACH TIER = FULL SCREEN CARD */
 .tier-box{
 min-width:90%;
 flex-shrink:0;
 scroll-snap-align:center;
 }
 
-/* PLAYER SMALLER */
+/* TIER HEADER */
+.tier-header{
+font-size:18px;
+padding:10px;
+}
+
+/* PLAYER */
 .player{
 padding:8px;
 font-size:14px;
@@ -423,6 +435,28 @@ height:26px;
 width:90%;
 max-width:320px;
 padding:20px;
+border-radius:14px;
+}
+
+.popup-skin{
+width:60px;
+}
+
+#popupKits img{
+width:24px !important;
+height:24px !important;
+padding:3px !important;
+}
+
+#popupKits .badge{
+font-size:10px;
+padding:3px 6px;
+}
+
+.close{
+font-size:18px;
+top:10px;
+right:12px;
 }
 
 }
