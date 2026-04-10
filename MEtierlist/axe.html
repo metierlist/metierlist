@@ -363,11 +363,12 @@ right:12px;
 }
 
 /* ========================= */
-/* 📱 MOBILE SWIPE TIERS */
+/* 📱 MOBILE SWIPE FIX */
 /* ========================= */
 
 @media (max-width:600px){
 
+/* HEADER */
 .header{
 flex-direction:column;
 gap:20px;
@@ -390,7 +391,14 @@ height:60px;
 font-size:10px;
 }
 
-/* 🔥 ONLY TIERS SLIDE */
+/* SEARCH */
+.search{
+width:90%;
+height:38px;
+font-size:15px;
+}
+
+/* 🔥 SWIPE TIERS (IMPORTANT PART) */
 .tiers{
 display:flex !important;
 overflow-x:auto;
@@ -398,16 +406,17 @@ scroll-snap-type:x mandatory;
 gap:15px;
 padding:10px;
 width:100%;
+-webkit-overflow-scrolling:touch;
 }
 
-/* each tier full screen */
+/* EACH TIER = FULL PAGE */
 .tier-box{
 min-width:90%;
 flex-shrink:0;
 scroll-snap-align:center;
 }
 
-/* smaller players */
+/* PLAYER SMALLER */
 .player{
 padding:8px;
 font-size:14px;
@@ -418,7 +427,7 @@ width:26px;
 height:26px;
 }
 
-/* popup fix */
+/* POPUP */
 .popup-box{
 width:90%;
 max-width:320px;
