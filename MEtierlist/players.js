@@ -68,4 +68,11 @@ const players = [
 {name:"RaspyYT", region:"AS", kits:["UHC"], tiers:["HT4"]},
 {name:"WhiskeyyMC", region:"AS", kits:["NethOP"], tiers:["HT4"]},
 {name:"DemoLizer_", region:"AS", kits:["NethOP"], tiers:["HT5"]},
+{name:"IMakeHerClap", region:"AS", kits:["NethOP"], tiers:["HT4"]},
+{name:"Agamer941", region:"AS", kits:["NethOP"], tiers:["HT5"]},
+{name:"WhiskeyyMC", region:"AS", kits:["Axe"], tiers:["HT5"]},
+{name:"_SpookyLegend", region:"AS", kits:["Axe"], tiers:["LT4"]},
+{name:"ItsHuzaifaXD", region:"AS", kits:["NethOP"], tiers:["HT5"]},
+{name:"DontTalkGamer", region:"AS", kits:["UHC"], tiers:["HT4"]},
+{name:"Dr4gonis", region:"AS", kits:["SMP"], tiers:["HT4"]},
 ];
