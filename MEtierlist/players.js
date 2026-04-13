@@ -75,4 +75,9 @@ const players = [
 {name:"ItsHuzaifaXD", region:"AS", kits:["NethOP"], tiers:["HT5"]},
 {name:"DontTalkGamer", region:"AS", kits:["UHC"], tiers:["HT4"]},
 {name:"Dr4gonis", region:"AS", kits:["SMP"], tiers:["HT4"]},
+{name:"RzRevolve", region:"AS", kits:["NethOP"], tiers:["HT5"]},
+{name:"Aero_0x7", region:"AS", kits:["NethOP"], tiers:["LT5"]},
+{name:"TayyabXD", region:"AS", kits:["NethOP"], tiers:["LT5"]},
+{name:"DontTalkGamer", region:"AS", kits:["NethOP"], tiers:["HT4"]},
+{name:"BetterAyush", region:"AS", kits:["NethOP"], tiers:["LT4"]},
 ];
