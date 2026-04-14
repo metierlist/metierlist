@@ -85,4 +85,5 @@ const players = [
 {name:"DontTalkGamer", region:"AS", kits:["Axe"], tiers:["HT4"]},
 {name:"DontTalkGamer", region:"AS", kits:["Sword"], tiers:["HT4"]},
 {name:"WhiskeyyMC", region:"AS", kits:["NethOP"], tiers:["LT3"]},
+{name:"Streyfe", region:"AS", kits:["UHC"], tiers:["HT4"]},
 ];
