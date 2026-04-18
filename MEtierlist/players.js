@@ -98,4 +98,5 @@ const players = [
 {name:"Zaidx1ksubs", region:"AS", kits:["Axe"], tiers:["LT3"]},
 {name:"Deadliest_Bladez", region:"AS", kits:["SMP"], tiers:["HT5"]},
 {name:"Zaidx1ksubs", region:"AS", kits:["SMP"], tiers:["LT3"]},
+{name:"ItsHuzaifaXD", region:"AS", kits:["NethOP"], tiers:["HT5"]},
 ];
