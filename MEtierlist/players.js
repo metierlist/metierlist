@@ -100,4 +100,5 @@ const players = [
 {name:"Zaidx1ksubs", region:"AS", kits:["SMP"], tiers:["LT4"]},
 {name:"ItsHuzaifaXD", region:"AS", kits:["NethOP"], tiers:["HT5"]},
 {name:"WhiskeyyMC", region:"AS", kits:["SMP"], tiers:["LT3"]},
+{name:"IMakeHerClap", region:"AS", kits:["NethOP"], tiers:["HT4"]},
 ];
