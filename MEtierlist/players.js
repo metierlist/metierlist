@@ -105,4 +105,6 @@ const players = [
 {name:"Aero_0x7", region:"AS", kits:["SMP"], tiers:["LT4"]},
 {name:"Deadliest_Bladez ", region:"AS", kits:["NethOP"], tiers:["LT4"]},
 {name:"Dr4gonis", region:"AS", kits:["NethOP"], tiers:["HT4"]},
+{name:"Dr4gonis", region:"AS", kits:["Vanilla"], tiers:["LT4"]},
+{name:"pgp7", region:"AS", kits:["Vanilla"], tiers:["HT5"]},
 ];
