@@ -95,7 +95,6 @@ const players = [
 {name:"Aunraza", region:"AS", kits:["NethOP"], tiers:["HT4"]},
 {name:"Zaidx1ksubs", region:"AS", kits:["Mace"], tiers:["HT4"]},
 {name:"Aunraza", region:"AS", kits:["Axe"], tiers:["HT5"]},
-{name:"Zaidx1ksubs", region:"AS", kits:["Axe"], tiers:["LT3"]},
 {name:"Deadliest_Bladez", region:"AS", kits:["SMP"], tiers:["HT5"]},
 {name:"Zaidx1ksubs", region:"AS", kits:["SMP"], tiers:["LT4"]},
 {name:"ItsHuzaifaXD", region:"AS", kits:["NethOP"], tiers:["HT5"]},
