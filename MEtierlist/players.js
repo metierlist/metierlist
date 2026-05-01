@@ -106,4 +106,12 @@ const players = [
 {name:"Dr4gonis", region:"AS", kits:["NethOP"], tiers:["HT4"]},
 {name:"Dr4gonis", region:"AS", kits:["Vanilla"], tiers:["LT4"]},
 {name:"pgp7", region:"AS", kits:["Vanilla"], tiers:["HT5"]},
+{name:"Reflex_Legend", region:"AS", kits:["NethOP"], tiers:["LT5"]},
+{name:"GetBetterLegend_", region:"AS", kits:["NethOP"], tiers:["lT5"]},
+{name:"Kingdefault_YT", region:"AS", kits:["NethOP"], tiers:["LT4"]},
+{name:"Kingdefault_YT", region:"AS", kits:["Vanilla"], tiers:["HT4"]},
+{name:"TimeGod_Legend", region:"AS", kits:["NethOP"], tiers:["HT5"]},
+{name:"IMakeHerClap", region:"AS", kits:["NethOP"], tiers:["HT4"]},
+{name:"Streyfe", region:"AS", kits:["NethOP"], tiers:["HT3"]},
+{name:"Streyfe", region:"AS", kits:["SMP"], tiers:["HT4"]},
 ];
